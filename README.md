@@ -174,12 +174,13 @@ There are a few CLI utilities included:
 - `nextcloud.export`:
     - Export data suitable for migrating servers. By default this includes the
       Nextcloud database, configuration, and data. See `nextcloud.export -h` for
-      more information. Note that it requires `sudo`.
+      more information. Note that it requires `sudo`. Also be careful when using rsync for transferring
+      the backup to another system: permissions should not change so maybe it's safer to use tar.
 - `nextcloud.import`:
     - Import data exported from another Nextcloud snap instance (via
       `nextcloud.export`). By default this imports the database, config, and
       data. See `nextcloud.import -h` for more information. Note that it
-      requires `sudo`.
+      requires `sudo`. 
 
 
 ## Where is my stuff?
